@@ -1,0 +1,120 @@
+/*
+Theme Name: Salient Child Theme
+Theme URI: http: //mysite.com/
+Description: This is a custom child theme for Salient
+Author: My Name
+Author URI: http: //mysite.com/
+Template: salient
+Version: 0.1
+*/
+.app_form_address .fancy-select-wrap {
+	padding-top: 0 !important;
+}
+.app_form_address > .gfield_label {
+	display: none !important;
+}
+
+.slp_results_container .results_wrapper {
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 0 !important;
+    width: 369px;
+    margin-left: 30px !important;
+    background-color: white;
+}
+.slp_results_container .results_wrapper:hover {
+    background-color: #efefef !important;
+}
+#map_sidebar {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    font-family: lato;
+    font-weight: 400;
+}
+.slp_results_container .results_wrapper .location_name {
+    font-size: 18px;
+}
+.location_secondary {
+    font-size: 14px;
+    line-height: 20px;
+}
+.single_show_event h3.vc_custom_heading {
+    font-weight: 500 !important;
+}
+.single_event_text_col {
+    margin-bottom: 5px !important;
+}
+.single_show_event h4 {
+	font-size: 18px !important;
+    font-weight: 400 !important;
+}
+.single_show_event p{
+	padding-bottom: 0 !important;
+}
+.event_details .field {
+    margin-bottom: 10px;
+}
+#addy_in_radius .fancy-select-wrap label {
+    display: none;
+}
+#addy_in_address label {
+    min-width: auto;
+}
+#addy_in_address .minimal-form-input {
+    margin-top: -30px;
+}
+.results_row_left_column {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span.location_distance {
+    width: 130px;
+    font-size: 14px;
+    text-align: right;
+}
+span.location_name {
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+#footer-widgets strong {
+    font-weight: 400;
+}
+#footer-widgets ul li {
+    line-height: 25px;
+}
+body #slide-out-widget-area {
+    background-color: #111111 !important;
+}
+#slide-out-widget-area .menuwrapper li a {
+    font-size: 20px !important;
+}
+#footer-widgets address {
+    line-height: 22px;
+}
+p.woocommerce-mini-cart__empty-message {
+    color: #fff;
+    padding: 20px 10px;
+}
+
+@media only screen and (max-width: 1000px){
+	.slp_results_container .results_wrapper {
+	    width: 100%;
+	}
+    #radius_in_submit {
+        justify-content: flex-end;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	.slp_results_container .results_wrapper {
+	    width: 314px;
+	}
+}
+@media only screen and (min-width: 1000px){
+    #addy_in_radius {
+        margin-left: 30px;
+    }
+}
