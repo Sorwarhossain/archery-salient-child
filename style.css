@@ -129,6 +129,12 @@ div.wrapper.featured {
             -ms-flex-pack: end;
                 justify-content: flex-end;
     }
+    .slp_search_form .search_box .search_item {
+        align-items: center !important;
+    }
+    #addy_in_radius .fancy-select-wrap {
+        padding-top: 0 !important;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .slp_results_container .results_wrapper {
@@ -167,6 +173,90 @@ body #slide-out-widget-area {
 p.woocommerce-mini-cart__empty-message {
     color: #fff;
     padding: 20px 10px;
+}
+
+@media only screen and (min-width: 1001px){
+    .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:first-child{
+        background-color: #ffffff !important;
+    }
+    .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:last-child{
+        background-color: #B60000 !important;
+    }
+
+    .testimonials_row:nth-child(2n + 2) .span_12 .vc_column_container:first-child{
+        background-color: #B60000 !important;
+    }
+    .testimonials_row:nth-child(2n + 2) .span_12 .vc_column_container:last-child{
+        background-color: #ffffff !important;
+    }
+
+    
+    .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:first-child h5,
+    .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:first-child h4,
+    .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:first-child p,
+    .testimonials_row:nth-child(2n + 2) .span_12 .vc_column_container:last-child h5,
+    .testimonials_row:nth-child(2n + 2) .span_12 .vc_column_container:last-child h4,
+    .testimonials_row:nth-child(2n + 2) .span_12 .vc_column_container:last-child p {
+        color: #000 !important;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 1000px){
+    #header-secondary-outer nav ul.sf-menu {
+        float: right !important;
+        width: 65%;
+        text-align: right;
+    }
+    #header-secondary-outer #social {
+        float: left !important;
+        width: 35%;
+        text-align: left;
+    }
+    .testimonials_row .span_12 .vc_column_container:first-child {
+        background-color: #ffffff !important;
+    }
+    .testimonials_row .span_12 .vc_column_container:first-child h5,
+    .testimonials_row .span_12 .vc_column_container:first-child h4,
+    .testimonials_row .span_12 .vc_column_container:first-child p {
+        color: #000;
+    }
+    .testimonials_row .span_12 .vc_column_container:last-child {
+        background-color: #B60000 !important;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    #footer-outer #copyright .col ul {
+        float: none !important;
+        text-align: center;
+        display: inline-block;
+    }
+    #footer-outer #copyright {
+        text-align: center;
+    }
+    #copyright .col_last {
+        line-height: 0px;
+    }
+    #copyright .span_5 {
+        margin-bottom: 5px;
+    }
+    html .nectar-shop-header .woocommerce-breadcrumb {
+        padding-bottom: 54px !important;
+    }
+    .woocommerce .nectar-shop-header .woocommerce-ordering {
+        top: initial !important;
+        bottom: 0 !important;
+        position: absolute !important;
+    }
+    .contact_page_divider {
+        margin-bottom: -20px !important;
+    }
+    .contact_intro {
+        margin-bottom: 10px !important;
+    }
 }
 
 
