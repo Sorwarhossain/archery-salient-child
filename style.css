@@ -209,6 +209,16 @@ p.woocommerce-mini-cart__empty-message {
     color: #fff;
     padding: 20px 10px;
 }
+body.single-product div.product .product_title {
+    padding-right: 0;
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 20px;
+}
+a.button.product_type_external.add_to_cart_button {
+    display: none;
+}
+
 
 @media only screen and (min-width: 1001px){
     .testimonials_row:nth-child(2n + 1) .span_12 .vc_column_container:first-child{
