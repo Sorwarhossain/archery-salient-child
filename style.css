@@ -117,7 +117,7 @@ div.wrapper.featured {
     width: 100%;
     height: 100%;
     display: block !important;
-    background-color: #B70000;
+    background-color: #FACD4F;
     z-index: -1;
 }
 @media only screen and (max-width: 1000px){
@@ -128,12 +128,6 @@ div.wrapper.featured {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
-    }
-    .slp_search_form .search_box .search_item {
-        align-items: center !important;
-    }
-    #addy_in_radius .fancy-select-wrap {
-        padding-top: 0 !important;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -150,6 +144,47 @@ div.wrapper.featured {
     #addy_in_radius {
         margin-left: 30px;
     }
+}
+    
+
+body #slide-out-widget-area {
+    background-color: #111111 !important;
+}
+#slide-out-widget-area .menuwrapper li a {
+    font-size: 20px !important;
+}
+#footer-widgets address {
+    line-height: 22px;
+}
+p.woocommerce-mini-cart__empty-message {
+    color: #fff;
+    padding: 20px 10px;
+}
+#copyright .col {
+    width: 100%;
+}
+.home_banner h1 {
+    font-size: 70px !important;
+    font-weight: 600 !important;
+}
+h2.gsection_title {
+    text-transform: uppercase;
+    font-size: 30px !important;
+    color: #505050 !important;
+}
+.gsection_description {
+    margin-bottom: 0 !important;
+    font-size: 16px !important;
+}
+.form_location_section {
+    padding-top: 70px !important;
+}
+.quantity.buttons_added {
+    display: none !important;
+}
+h1.product_title.entry-title {
+    font-size: 40px;
+    line-height: 47px;
 }
 
 

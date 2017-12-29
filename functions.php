@@ -40,3 +40,62 @@ function archery_custom_login_page() {
     </style>';
 }
 add_action('login_head', 'archery_custom_login_page');
+
+
+
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+ 
+function yourtheme_setup() {
+    add_theme_support( 'wc-product-gallery-zoom' );
+}
+
+
+
+
+
+
+// set all wc products to external 
+add_action('init', 'wc_product_set_to_external');
+function wc_product_set_to_external(){
+	$all_products = get_posts(
+		array(
+			'post_type' => 'product',
+			'post_status' => 'publish',
+			'fields'	=> 'ids',
+			'posts_per_page' => -1,
+		)
+	);
+	$on_site_products = get_posts(
+		array(
+			'post_type' => 'product',
+			'post_status' => 'publish',
+			'fields'	=> 'ids',
+			'posts_per_page' => -1,
+			'product_cat' => 'on-site-products',
+		)
+	);
+	$external_products = array_diff($all_products, $on_site_products);
+	foreach ($external_products as $id ) {
+		wp_set_object_terms($id, 'external', 'product_type');
+	}	
+	foreach ($on_site_products as $id ) {
+		wp_set_object_terms($id, 'simple', 'product_type');
+	}
+}
+// handle external products text and link 
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'change_external_product_btn_text', 10, 2 );
+add_filter( 'woocommerce_product_add_to_cart_url',
+'change_external_products_link', 10, 2 );
+function change_external_product_btn_text( $button_text, $product ) {
+    if ( 'external' === $product->get_type() ) {
+        // enter the default text for external products
+       	$button_text = $product->button_text ? $product->button_text : 'Find Dealer Location';
+    }
+    return $button_text;
+}
+function change_external_products_link(  $url, $product ) {
+    if ( 'external' === $product->get_type() ) {
+        $url = get_permalink( '6415' ); // 6412 is the store locator page ID
+    }
+    return $url;
+}
